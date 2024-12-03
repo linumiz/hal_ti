@@ -13,6 +13,7 @@ if(CONFIG_HAS_MSPM0_SDK)
   zephyr_library()
   zephyr_library_compile_definitions(${COMPILER})
   zephyr_library_sources(
+	source/ti/driverlib/dl_rtc_common.c
 	source/ti/driverlib/dl_uart.c
 	source/ti/driverlib/dl_common.c
 	source/ti/driverlib/dl_i2c.c
